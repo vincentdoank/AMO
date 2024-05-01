@@ -81,6 +81,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: -4156354854772975328}
   m_SourcePrefab: {fileID: 100100000, guid: 54e7691a565e46d47a6d49bb086da2ff, type: 3}
+--- !u!137 &4599789825971378323 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6269125246687040151, guid: 54e7691a565e46d47a6d49bb086da2ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 7554177370975635972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7211597374249056085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 54e7691a565e46d47a6d49bb086da2ff,
@@ -103,6 +109,7 @@ MonoBehaviour:
   handAccessory: {fileID: 0}
   bodyAccessory: {fileID: 0}
   shoesAccessory: {fileID: 0}
+  bodyMeshRenderer: {fileID: 4599789825971378323}
 --- !u!114 &-4156354854772975328
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -275,6 +275,7 @@ MonoBehaviour:
   handAccessory: {fileID: 0}
   bodyAccessory: {fileID: 0}
   shoesAccessory: {fileID: 0}
+  bodyMeshRenderer: {fileID: 6244737655079879450}
 --- !u!114 &-7370802300922061068
 MonoBehaviour:
   m_ObjectHideFlags: 0

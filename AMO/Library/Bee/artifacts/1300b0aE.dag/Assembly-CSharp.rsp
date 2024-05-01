@@ -332,6 +332,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/CopyrightNoticeEditor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/PPv2URPConverters.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/SimpleInspectorAttributes.ref.dll"
@@ -423,7 +425,8 @@
 "Assets/Scripts/EnergyController.cs"
 "Assets/Scripts/HomeController.cs"
 "Assets/Scripts/InboxController.cs"
-"Assets/Scripts/ItemStorage.cs"
+"Assets/Scripts/Item.cs"
+"Assets/Scripts/ItemLibrary.cs"
 "Assets/Scripts/Level.cs"
 "Assets/Scripts/MoodController.cs"
 "Assets/Scripts/NotificationController.cs"
@@ -444,6 +447,7 @@
 "Assets/Scripts/UI/CustomToggleButton.cs"
 "Assets/Scripts/UI/MenuItemUI.cs"
 "Assets/Scripts/UI/SwipeSlider.cs"
+"Assets/Scripts/UserData.cs"
 "Assets/Scripts/Utils/ButtonInfo.cs"
 "Assets/Scripts/Utils/Conts.cs"
 "Assets/Scripts/Utils/Utils.cs"
@@ -452,7 +456,6 @@
 "Assets/Simple Scroll-Snap/Examples/Example 5 (Dynamic Content)/Scripts/DynamicContent.cs"
 "Assets/Simple Scroll-Snap/Examples/Example 6 (3D Shape Selection)/Scripts/Rotator.cs"
 "Assets/Simple Scroll-Snap/Examples/_Common/Scripts/ExpandInformation.cs"
-"Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic
 /optimize+

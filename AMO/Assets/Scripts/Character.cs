@@ -23,7 +23,7 @@ public class Character : MonoBehaviour
     private void Start()
     {
         LoadAllCharacter();
-        selectedAvatarId = "Mochi01";
+        selectedAvatarId = "Mochi_1";
         LoadCharacter(selectedAvatarId);
     }
 
@@ -36,6 +36,7 @@ public class Character : MonoBehaviour
             character.Init(info);
             charObj.SetActive(false);
             characterList.Add(character);
+            Debug.LogError("av id : " + info.avatarId);
         }
     }
 
@@ -46,43 +47,42 @@ public class Character : MonoBehaviour
             if (character.Info.avatarId == avatarId)
             {
                 currentCharacter = character;
+                HomeController.Instance.selectedCharacter = character;
                 character.gameObject.SetActive(true);
                 break;
             }
         }
     }
 
-    public void SwitchCharacter(string avatarId)
+    public SelectedCharacter SwitchCharacter(string avatarId)
     {
         foreach (SelectedCharacter character in characterList)
         {
             if (character.Info.avatarId == avatarId)
             {
+                Debug.LogError("avatarId : " + avatarId);
                 currentCharacter = character;
                 character.gameObject.SetActive(true);
             }
             else
             {
                 character.gameObject.SetActive(false);
+                Debug.LogError("else avatarId : " + character.Info.avatarId, character);
             }
         }
+
+        return currentCharacter;
     }
 
     public AvatarInfo GetCurrentAvatarInfo()
     {
-        Debug.LogError("selectedAvatarId : " + selectedAvatarId);
-        foreach (AvatarInfo info in avatarInfoList)
-        {
-            Debug.LogError("existing avatarId : " + info.avatarId);
-        }
         var result = avatarInfoList.Where(x => x.avatarId == selectedAvatarId).FirstOrDefault();
-        Debug.LogError("result : " + result.avatarId);
         return result;
     }
 
     public AvatarInfo GetAvatarInfo(string avatarId)
     {
-        var result = avatarInfoList.Where(x => x.avatarId == selectedAvatarId).FirstOrDefault();
+        var result = avatarInfoList.Where(x => x.avatarId == avatarId).FirstOrDefault();
         return result;
     }
 

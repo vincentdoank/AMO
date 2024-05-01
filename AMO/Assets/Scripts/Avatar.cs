@@ -24,10 +24,10 @@ public class AvatarInfo
     public StageType stageType;
     public float energy;
 
-    public string headAccessoryId;
-    public string bodyAccessoryId;
-    public string handAccessoryId;
-    public string shoesAccesoryId;
+    public string helmetId;
+    public string outfitId;
+
+    public string skinId;
 
     public GameObject characterPrefab;
     public bool isUnlocked;

@@ -25,10 +25,13 @@ public class CharacterSelection : MonoBehaviour
         List<AvatarInfo> infoList = Character.Instance.GetAvatarInfoList();
         for (int i = 0; i < infoList.Count; i++)
         {
-            AvatarInfo info = infoList[i];
-            GameObject item = Instantiate(characterItemPrefab, characterItemParent, false);
-            CharacterItem characterItem = item.GetComponent<CharacterItem>();
-            characterItem.Init(info, toggleGroup);
+            if (infoList[i].isUnlocked)
+            {
+                AvatarInfo info = infoList[i];
+                GameObject item = Instantiate(characterItemPrefab, characterItemParent, false);
+                CharacterItem characterItem = item.GetComponent<CharacterItem>();
+                characterItem.Init(info, toggleGroup);
+            }
         }
 
         simpleScrollSnap.Setup();

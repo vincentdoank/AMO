@@ -20,7 +20,20 @@ public class CharacterItem : MonoBehaviour
         characterNameText.text = info.avatarName;
 
 
-        toggle = GetComponent<Toggle>();
+        if (!toggle)
+        {
+            toggle = GetComponent<Toggle>();
+            toggle.onValueChanged.AddListener(OnSelected);
+        }
         toggle.group = toggleGroup;
+
+    }
+
+    private void OnSelected(bool isOn)
+    {
+        if ((isOn))
+        {
+            HomeController.Instance.SelectCharacter(info);
+        }
     }
 }
