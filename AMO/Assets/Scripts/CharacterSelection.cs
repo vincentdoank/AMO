@@ -9,6 +9,9 @@ public class CharacterSelection : MonoBehaviour
     public GameObject characterItemPrefab;
     public Transform characterItemParent;
     public SimpleScrollSnap simpleScrollSnap;
+    public Button backButton;
+
+    public GameObject container;
 
     private ToggleGroup toggleGroup;
 
@@ -18,6 +21,12 @@ public class CharacterSelection : MonoBehaviour
         Init();
         gameObject.SetActive(false);
         simpleScrollSnap.OnPanelCentered.AddListener(OnItemSelected);
+        backButton.onClick.AddListener(() => Show(false));
+    }
+
+    private void Show(bool value)
+    {
+        container.SetActive(value);
     }
 
     private void Init()
@@ -40,7 +49,5 @@ public class CharacterSelection : MonoBehaviour
     private void OnItemSelected(int to, int from)
     {
         simpleScrollSnap.Content.GetChild(to).GetComponent<Toggle>().isOn = true;
-    
-        
     }
 }

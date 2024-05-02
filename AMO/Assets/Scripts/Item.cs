@@ -5,32 +5,34 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-    private AccessoryInfo info;
+    public AccessoryInfo Info { get; private set; }
     public Image image;
 
     private Toggle toggle;
 
-    public void Init(AccessoryInfo info)
+    public void Init(ItemLibrary library, AccessoryInfo info, ToggleGroup toggleGroup)
     {
         if (toggle == null)
         {
             toggle = GetComponent<Toggle>();
             toggle.onValueChanged.AddListener(SelectItem);
         }
-        this.info = info;
-        if (info == null)
+        Info = info;
+        if (Info == null)
         {
             toggle.enabled = false;
+            image.sprite = library.emptyItemSprite;
         }
         else
         {
             toggle.enabled = true;
-            image.sprite = info.accessorySprite;
+            image.sprite = Info.accessorySprite;
         }
+        toggle.group = toggleGroup;
     }
 
-    private void SelectItem(bool isOn)
+    public void SelectItem(bool isOn)
     {
-        HomeController.Instance.selectedCharacter.AddAccessory(info.accessoryId);
+        if(isOn) HomeController.Instance.selectedCharacter.AddAccessory(Info.accessoryId);
     }
 }

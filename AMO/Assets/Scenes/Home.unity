@@ -409,6 +409,93 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb26efff5bd20b047b87b0df33781012, type: 3}
+--- !u!1 &28678201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28678204}
+  - component: {fileID: 28678203}
+  - component: {fileID: 28678202}
+  - component: {fileID: 28678205}
+  m_Layer: 5
+  m_Name: QRAreaImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &28678202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28678201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &28678203
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28678201}
+  m_CullTransparentMesh: 1
+--- !u!224 &28678204
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28678201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 863730824}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1295, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &28678205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28678201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 4
+  m_AspectRatio: 1
 --- !u!4 &34271318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 69850715f8d465b45a1e9698cd699191,
@@ -5371,7 +5458,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 28678204}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8880,6 +8968,8 @@ MonoBehaviour:
   outfitToggle: {fileID: 641607778}
   helmetToggle: {fileID: 1291301724}
   backButton: {fileID: 499112728}
+  emptyItemSprite: {fileID: 0}
+  toggleGroup: {fileID: 1852146275}
 --- !u!1 &1407858719
 GameObject:
   m_ObjectHideFlags: 0
@@ -9121,6 +9211,8 @@ MonoBehaviour:
     type: 3}
   characterItemParent: {fileID: 1811107956}
   simpleScrollSnap: {fileID: 871723478}
+  backButton: {fileID: 283379007}
+  container: {fileID: 1445535569}
 --- !u!114 &1445535572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9182,6 +9274,24 @@ MonoBehaviour:
     accessorySprite: {fileID: 21300004, guid: 595bd02e04d6e8144adc1c0a1a1a0227, type: 3}
     accessoryType: 0
     hasOwned: 1
+  - accessoryId: mochi_baby_helm2
+    accessoryName: Mochi Helm (Baby)
+    maskId: 
+    avatarName: Mochi
+    accessoryPrefab: {fileID: 6418071506306384198, guid: 5e388fdd56beafb4893a208982f117e7,
+      type: 3}
+    accessorySprite: {fileID: 21300012, guid: 595bd02e04d6e8144adc1c0a1a1a0227, type: 3}
+    accessoryType: 0
+    hasOwned: 1
+  - accessoryId: mochi_baby_helm3
+    accessoryName: Mochi Helm (Baby)
+    maskId: 
+    avatarName: Mochi
+    accessoryPrefab: {fileID: 6418071506306384198, guid: 5e388fdd56beafb4893a208982f117e7,
+      type: 3}
+    accessorySprite: {fileID: 21300014, guid: 595bd02e04d6e8144adc1c0a1a1a0227, type: 3}
+    accessoryType: 0
+    hasOwned: 1
   - accessoryId: mochi_baby_dress
     accessoryName: Mochi Dress (Baby)
     maskId: _mask01
@@ -9189,6 +9299,15 @@ MonoBehaviour:
     accessoryPrefab: {fileID: 180002476527677222, guid: cd9f87fcc24160947b5ca9d6dbd7c4ec,
       type: 3}
     accessorySprite: {fileID: 21300002, guid: 595bd02e04d6e8144adc1c0a1a1a0227, type: 3}
+    accessoryType: 1
+    hasOwned: 1
+  - accessoryId: mochi_baby_dress1
+    accessoryName: Mochi Dress (Baby)
+    maskId: _mask01
+    avatarName: Mochi
+    accessoryPrefab: {fileID: 180002476527677222, guid: cd9f87fcc24160947b5ca9d6dbd7c4ec,
+      type: 3}
+    accessorySprite: {fileID: 21300000, guid: 595bd02e04d6e8144adc1c0a1a1a0227, type: 3}
     accessoryType: 1
     hasOwned: 1
   - accessoryId: mochi_baby_shoes
@@ -10580,7 +10699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
+  m_AllowSwitchOff: 1
 --- !u!4 &1897942236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bb26efff5bd20b047b87b0df33781012,
@@ -10761,6 +10880,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11455064, guid: 54b2a019ebe77804b8a5c0b93b23a689, type: 3}
+      propertyPath: previewImage
+      value: 
+      objectReference: {fileID: 28678202}
+    - target: {fileID: 11455064, guid: 54b2a019ebe77804b8a5c0b93b23a689, type: 3}
+      propertyPath: previewAspectFitter
+      value: 
+      objectReference: {fileID: 28678205}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13599,6 +13726,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1162877611}
   - {fileID: 180516025}
+  - {fileID: 863730824}
   - {fileID: 840029811}
   - {fileID: 1399592178}
   - {fileID: 1030493508}
@@ -13609,7 +13737,6 @@ SceneRoots:
   - {fileID: 551723507}
   - {fileID: 516161035}
   - {fileID: 1917986622}
-  - {fileID: 863730824}
   - {fileID: 198147196}
   - {fileID: 76476819}
   - {fileID: 1964553357}

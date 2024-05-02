@@ -90,4 +90,15 @@ public class Character : MonoBehaviour
     {
         return avatarInfoList;
     }
+
+    public void UnlockCharacter(string avatarId)
+    {
+        foreach (AvatarInfo info in avatarInfoList)
+        {
+            if (info.avatarId == avatarId)
+            {
+                info.isUnlocked = true;
+            }
+        }
+    }
 }

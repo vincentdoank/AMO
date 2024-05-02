@@ -15,10 +15,15 @@ public class ItemLibrary : MonoBehaviour
     public Toggle outfitToggle;
     public Toggle helmetToggle;
     public Button backButton;
+
+    public Sprite emptyItemSprite;
+
+    public ToggleGroup toggleGroup;
+
     private Button button;
 
 
-    private void Start()
+    private IEnumerator Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(() => Show(true));
@@ -26,7 +31,27 @@ public class ItemLibrary : MonoBehaviour
         outfitToggle.onValueChanged.AddListener(ShowOutfitList);
         helmetToggle.onValueChanged.AddListener(ShowHelmetList);
         outfitToggle.SetIsOnWithoutNotify(true);
-        Init(SelectedCharacter.AccessoryType.Outfit);
+
+        yield return null;
+        SetEquippedAccesories();
+    }
+
+    private void SetEquippedAccesories()
+    {
+        foreach (GameObject go in itemList)
+        {
+            Item item = go.GetComponent<Item>();
+            if (item.Info != null)
+            {
+                string helmetId = HomeController.Instance.selectedCharacter.Info.helmetId;
+                string outfitId = HomeController.Instance.selectedCharacter.Info.outfitId;
+                bool isEquipped =
+                    (item.Info.accessoryId == helmetId && helmetId != "") || 
+                    (item.Info.accessoryId == outfitId && outfitId != "");
+
+                item.SelectItem(isEquipped);
+            }
+        }
     }
 
     public void Init(SelectedCharacter.AccessoryType accessoryType)
@@ -58,7 +83,7 @@ public class ItemLibrary : MonoBehaviour
     {
         GameObject obj = Instantiate(itemPrefab, itemParent, false);
         Item item = obj.GetComponent<Item>();
-        item.Init(info);
+        item.Init(this, info, toggleGroup);
         itemList.Add(obj);
         return obj;
     }
@@ -69,7 +94,7 @@ public class ItemLibrary : MonoBehaviour
         {
             if (!itemList[i].activeSelf)
             {
-                itemList[i].GetComponent<Item>().Init(info);
+                itemList[i].GetComponent<Item>().Init(this, info, toggleGroup);
                 itemList[i].SetActive(true);
                 return itemList[i];
             }
@@ -84,6 +109,8 @@ public class ItemLibrary : MonoBehaviour
         HomeController.Instance.ShowHUD(!value);
         HomeController.Instance.ShowFittingRoom(value);
         HomeController.Instance.ShowHome(!value);
+        outfitToggle.SetIsOnWithoutNotify(true);
+        ShowOutfitList(true);
     }
 
     private void ShowOutfitList(bool value)
