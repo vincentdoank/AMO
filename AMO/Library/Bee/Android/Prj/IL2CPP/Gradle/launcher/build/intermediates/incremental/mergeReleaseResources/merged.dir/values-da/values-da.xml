@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Annuller</string>
+    <string name="__arcore_continue">Fortsæt</string>
+    <string name="__arcore_install_app">Denne app kræver den nyeste version af Google Play-tjenester til AR.</string>
+    <string name="__arcore_install_feature">Denne funktion kræver den nyeste version af Google Play-tjenester til AR.</string>
+    <string name="__arcore_installing">Installerer Google Play-tjenester til AR…</string>
+    <string name="caution_audio_gain_control">
+        Ønsker du at styrkeindstille lyden i headsettets mikrofoner?\n\n
+        Ved at bruge denne funktion og lytte ved høj styrke i lang tid kan du skade din hørelse.\n
+        Læg venligst mærke til: denne indstilling vil være fast, indtil du slukker for headsettet eller slukker med styrkeknappen til den tilkoblede enhed.
+    </string>
+    <string name="perm_description_audio_gain_control">Kontrol til styrkeindstilling af headset mikrofon</string>
+    <string name="perm_label_audio_gain_control">Kontrol til styrkeindstilling af headset mikrofon</string>
+</resources>

@@ -1,0 +1,30 @@
+<dependencies>
+  <compile
+      roots="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release">
+    <dependency
+        name="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+  </compile>
+  <package
+      roots="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release,__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\RuntimePermissions.jar:unspecified@jar,__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar,com.google.ar:core:1.22.0@aar,:BasicFunctionSDK_1.2.1:@aar,:MaxstAR:@aar,:SpeechToText:@aar,:EasyWebCamLib:@aar,:unityandroidpermissions:@aar">
+    <dependency
+        name="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+        simpleName="Gradle:unityLibrary"/>
+    <dependency
+        name="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\RuntimePermissions.jar:unspecified@jar"/>
+    <dependency
+        name="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"/>
+    <dependency
+        name="com.google.ar:core:1.22.0@aar"/>
+    <dependency
+        name=":BasicFunctionSDK_1.2.1:@aar"/>
+    <dependency
+        name=":MaxstAR:@aar"/>
+    <dependency
+        name=":SpeechToText:@aar"/>
+    <dependency
+        name=":EasyWebCamLib:@aar"/>
+    <dependency
+        name=":unityandroidpermissions:@aar"/>
+  </package>
+</dependencies>

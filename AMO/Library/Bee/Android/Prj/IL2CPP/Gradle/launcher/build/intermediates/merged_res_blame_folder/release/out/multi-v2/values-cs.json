@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Unity Projects\\AMO\\AMO\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-cs\\values-cs.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\PC GAMING\\.gradle\\caches\\transforms-3\\5a3b101ddebe82a33bd92163e886623f\\transformed\\core-1.22.0\\res\\values-cs\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,237,290,402,516",
+                        "endColumns": "46,52,111,113,83",
+                        "endOffsets": "236,289,401,515,599"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,106,163,279,397",
+                        "endColumns": "50,56,115,117,87",
+                        "endOffsets": "101,158,274,392,480"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\PC GAMING\\.gradle\\caches\\transforms-3\\1ab6489dd2481c56f31e77200c12e2b7\\transformed\\BasicFunctionSDK_1.2.1\\res\\values-cs\\values-cs.xml",
+                    "from": {
+                        "startLines": "2,7,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,409,513",
+                        "endLines": "6,7,8",
+                        "endColumns": "13,103,97",
+                        "endOffsets": "404,508,606"
+                    },
+                    "to": {
+                        "startLines": "7,12,13",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "485,839,943",
+                        "endLines": "11,12,13",
+                        "endColumns": "13,103,97",
+                        "endOffsets": "834,938,1036"
+                    }
+                }
+            ]
+        }
+    ]
+}

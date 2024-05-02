@@ -1,0 +1,101 @@
+<libraries>
+  <library
+      name="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+      jars="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\ee657587fafc2d630697b24ef92a41f9\transformed\out\jars\classes.jar;D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\ee657587fafc2d630697b24ef92a41f9\transformed\out\jars\libs\RuntimePermissions.jar;D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\ee657587fafc2d630697b24ef92a41f9\transformed\out\jars\libs\unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\ee657587fafc2d630697b24ef92a41f9\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\RuntimePermissions.jar:unspecified@jar"
+      jars="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\RuntimePermissions.jar"
+      resolved="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\RuntimePermissions.jar:unspecified"/>
+  <library
+      name="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:D:\Unity Projects\AMO\AMO\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+  <library
+      name="com.google.ar:core:1.22.0@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\5a3b101ddebe82a33bd92163e886623f\transformed\core-1.22.0\jars\classes.jar"
+      resolved="com.google.ar:core:1.22.0"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\5a3b101ddebe82a33bd92163e886623f\transformed\core-1.22.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":BasicFunctionSDK_1.2.1:@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\1ab6489dd2481c56f31e77200c12e2b7\transformed\BasicFunctionSDK_1.2.1\jars\classes.jar"
+      resolved=":BasicFunctionSDK_1.2.1:"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\1ab6489dd2481c56f31e77200c12e2b7\transformed\BasicFunctionSDK_1.2.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":MaxstAR:@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\81eff13ca4adb26e737c0d310141438c\transformed\MaxstAR\jars\classes.jar;C:\Users\PC GAMING\.gradle\caches\transforms-3\81eff13ca4adb26e737c0d310141438c\transformed\MaxstAR\jars\libs\BT200Ctrl.jar;C:\Users\PC GAMING\.gradle\caches\transforms-3\81eff13ca4adb26e737c0d310141438c\transformed\MaxstAR\jars\libs\BT350Ctrl.jar;C:\Users\PC GAMING\.gradle\caches\transforms-3\81eff13ca4adb26e737c0d310141438c\transformed\MaxstAR\jars\libs\com.osterhoutgroup.api.ext.jar"
+      resolved=":MaxstAR:"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\81eff13ca4adb26e737c0d310141438c\transformed\MaxstAR"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":SpeechToText:@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\ae3afa0b2d39ef17aa9253a4088fb4ad\transformed\SpeechToText\jars\classes.jar"
+      resolved=":SpeechToText:"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\ae3afa0b2d39ef17aa9253a4088fb4ad\transformed\SpeechToText"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":EasyWebCamLib:@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\9ba1c0895b3353dbea7e4bd2baca221e\transformed\EasyWebCamLib\jars\classes.jar"
+      resolved=":EasyWebCamLib:"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\9ba1c0895b3353dbea7e4bd2baca221e\transformed\EasyWebCamLib"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name=":unityandroidpermissions:@aar"
+      jars="C:\Users\PC GAMING\.gradle\caches\transforms-3\22041ef501b688c5cd2c1838e17ac00c\transformed\unityandroidpermissions\jars\classes.jar"
+      resolved=":unityandroidpermissions:"
+      folder="C:\Users\PC GAMING\.gradle\caches\transforms-3\22041ef501b688c5cd2c1838e17ac00c\transformed\unityandroidpermissions"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+</libraries>

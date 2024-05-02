@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class UserData : MonoBehaviour
 {
-    
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }

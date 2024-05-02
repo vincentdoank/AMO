@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.InputManagerEntry;
 
 public class SelectedCharacter : MonoBehaviour
 {
@@ -97,7 +95,13 @@ public class SelectedCharacter : MonoBehaviour
         characterAnimation.SetAnimationCondition(conditionName);
         foreach (GameObject equippedAccessory in equippedAccessories)
         {
-            equippedAccessory.GetComponent<CharacterAnimation>().SetAnimationCondition(conditionName);
+            CharacterAnimation characterAnim = equippedAccessory.GetComponent<CharacterAnimation>();
+            if (characterAnim) characterAnim.SetAnimationCondition(conditionName);
+            CharacterAnimation[] animations = equippedAccessory.GetComponentsInChildren<CharacterAnimation>();
+            foreach (CharacterAnimation animation in animations)
+            {
+                animation.SetAnimationCondition(conditionName);
+            }
         }
     }
 
@@ -107,7 +111,13 @@ public class SelectedCharacter : MonoBehaviour
         characterAnimation.SetAnimationCondition(conditionName, true);
         foreach (GameObject equippedAccessory in equippedAccessories)
         {
-            equippedAccessory.GetComponent<CharacterAnimation>().SetAnimationCondition(conditionName);
+            CharacterAnimation characterAnim = equippedAccessory.GetComponent<CharacterAnimation>();
+            if (characterAnim) characterAnim.SetAnimationCondition(conditionName);
+            CharacterAnimation[] animations = equippedAccessory.GetComponentsInChildren<CharacterAnimation>();
+            foreach (CharacterAnimation animation in animations)
+            {
+                animation.SetAnimationCondition(conditionName);
+            }
         }
     }
 

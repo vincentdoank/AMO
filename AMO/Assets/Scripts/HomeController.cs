@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HomeController : MonoBehaviour
 {
@@ -21,8 +22,9 @@ public class HomeController : MonoBehaviour
     public SelectedCharacter selectedCharacter;
 
     public GameObject homeHUD;
-    public GameObject homeEnvironment;
-    public GameObject fittingRoomEnvironment;
+    public GameObject homeRoom;
+    public GameObject fittingRoom;
+    public GameObject characterSelectionRoom;
 
     private float elapsedTime = 0;
     private DateTime dateTimeStart;
@@ -36,6 +38,9 @@ public class HomeController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+
     }
 
     private void Start()
@@ -59,6 +64,10 @@ public class HomeController : MonoBehaviour
         {
             selectedCharacter.Evolution();
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            LoadScanScene();
+        }
     }
 
     public void SetEnergy(int value)
@@ -68,13 +77,14 @@ public class HomeController : MonoBehaviour
 
     public void ShowCharacterSelection(bool value)
     {
-        characterSelection.gameObject.SetActive(value);
+        characterSelection.Show(value);
     }
 
     public void SelectCharacter(AvatarInfo info)
     {
         selectedCharacter = character.SwitchCharacter(info.avatarId);
         selectedCharacter.Init(info);
+        selectedCharacter.PlayChoosenAnimation();
     }
 
     public void ShowHUD(bool value)
@@ -84,11 +94,22 @@ public class HomeController : MonoBehaviour
 
     public void ShowHome(bool value)
     {
-        homeEnvironment.SetActive(value);
+        homeRoom.SetActive(value);
     }
 
     public void ShowFittingRoom(bool value)
     {
-        fittingRoomEnvironment.SetActive(value);
+        fittingRoom.SetActive(value);
+    }
+
+    public void ShowCharacterSelectionRoom(bool value)
+    {
+        characterSelectionRoom.SetActive(value);
+    }
+
+    private void LoadScanScene()
+    {
+        SceneStackManager.Instance.LoadScene("Home", "CodeReader");
+        //SceneManager.LoadSceneAsync("CodeReader", LoadSceneMode.Single);
     }
 }

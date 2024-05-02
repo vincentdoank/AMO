@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">取消</string>
+    <string name="__arcore_continue">繼續</string>
+    <string name="__arcore_install_app">必須安裝最新版本的「Google Play 服務 - AR 適用」，才能啟用這個應用程式。</string>
+    <string name="__arcore_install_feature">必須安裝最新版本的「Google Play 服務 - AR 適用」，才能啟用此功能。</string>
+    <string name="__arcore_installing">正在安裝「Google Play 服務 - AR 適用」…</string>
+    <string name="caution_audio_gain_control">
+        您要提高頭戴顯示器的音量輸出嗎？\n\n
+        如果您使用此功能並長時間以高音量收聽，您的聽力可能會受損。\n
+        請注意：除非您斷開頭戴顯示器的連接或者關閉連接的裝置電源，否則此設定將會一直維持。
+    </string>
+    <string name="perm_description_audio_gain_control">頭戴顯示器的喇叭音量提高控制</string>
+    <string name="perm_label_audio_gain_control">頭戴顯示器的喇叭音量提高控制</string>
+</resources>

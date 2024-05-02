@@ -11,6 +11,8 @@ public class Character : MonoBehaviour
     private List<SelectedCharacter> characterList = new List<SelectedCharacter>();
     private string selectedAvatarId;
 
+    public GameObject unlockCharacterPopup;
+
     public SelectedCharacter currentCharacter;
 
     public static Character Instance { get; private set; }
@@ -91,7 +93,7 @@ public class Character : MonoBehaviour
         return avatarInfoList;
     }
 
-    public void UnlockCharacter(string avatarId)
+    public IEnumerator UnlockCharacter(string avatarId)
     {
         foreach (AvatarInfo info in avatarInfoList)
         {
@@ -100,5 +102,8 @@ public class Character : MonoBehaviour
                 info.isUnlocked = true;
             }
         }
+
+        yield return new WaitForSeconds(0.5f);
+        unlockCharacterPopup.SetActive(true);
     }
 }

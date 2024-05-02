@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Anuluj</string>
+    <string name="__arcore_continue">Dalej</string>
+    <string name="__arcore_install_app">Ta aplikacja wymaga najnowszej wersji Usług Google Play dla AR.</string>
+    <string name="__arcore_install_feature">Ta funkcja wymaga najnowszej wersji Usług Google Play dla AR.</string>
+    <string name="__arcore_installing">Instaluję Usługi Google Play dla AR…</string>
+    <string name="caution_audio_gain_control">
+        Chcesz wzmocnić wyjście audio  zestawu słuchawkowego?\n\n
+        Korzystanie z tej funkcji i słuchanie głośnej muzyki przez długi czas może spowodować uszkodzenie słuchu.\n
+        Uwaga: to ustawienie pozostanie ustawione do momentu odłączenia zestawu słuchawkowego lub wyłączenia zasilania podłączonego urządzenia.
+    </string>
+    <string name="perm_description_audio_gain_control">Sterowanie głośnością zestawu słuchawkowego</string>
+    <string name="perm_label_audio_gain_control">Sterowanie głośnością zestawu słuchawkowego</string>
+</resources>

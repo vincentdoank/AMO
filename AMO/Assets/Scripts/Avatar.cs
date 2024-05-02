@@ -58,6 +58,7 @@ public class Avatar : MonoBehaviour
 
     private void OpenCharacterSelection()
     {
+        Debug.LogError("OpenCharacterSelection");
         HomeController.Instance.ShowCharacterSelection(true);
     }
 }

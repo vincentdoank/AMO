@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Annuleren</string>
+    <string name="__arcore_continue">Doorgaan</string>
+    <string name="__arcore_install_app">Voor deze app heb je de nieuwste versie van Google Play-services voor AR nodig.</string>
+    <string name="__arcore_install_feature">Voor deze functie heb je de nieuwste versie van Google Play-services voor AR nodig.</string>
+    <string name="__arcore_installing">Google Play-services voor AR installeren…</string>
+    <string name="caution_audio_gain_control">
+        Wil je de audio-uitgang van de headset-speaker versterken?\n\n
+        Het gebruik van deze functie en het langdurig luisteren op een hoog volume kan uw gehoor beschadigen.\n
+        Let op: deze instelling blijft staan totdat u de headset loskoppelt of het aangesloten apparaat uitschakelt.
+    </string>
+    <string name="perm_description_audio_gain_control">Headset Luidspreker Versterking Controle:</string>
+    <string name="perm_label_audio_gain_control">Headset Luidspreker Versterking Controle:</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Zrušit</string>
+    <string name="__arcore_continue">Pokračovat</string>
+    <string name="__arcore_install_app">Tato aplikace vyžaduje nejnovější verzi Služeb Google Play pro RR.</string>
+    <string name="__arcore_install_feature">Tato funkce vyžaduje nejnovější verzi Služeb Google Play pro RR.</string>
+    <string name="__arcore_installing">Instalují se Služby Google Play pro RR…</string>
+    <string name="caution_audio_gain_control">
+        Chcete zesílit zvukový výstup reproduktoru headsetu?\n\n
+        Používání této funkce a poslech při vysoké hlasitosti po dlouhou dobu může poškodit váš sluch.\n
+        Poznámka: toto nastavení zůstane nastaveno, dokud neodpojíte headset nebo nevypnete napájení připojeného zařízení.
+    </string>
+    <string name="perm_description_audio_gain_control">Ovládání zesílení reproduktoru headsetu</string>
+    <string name="perm_label_audio_gain_control">Ovládání zesílení reproduktoru headsetu</string>
+</resources>
